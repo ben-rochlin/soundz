@@ -3,4 +3,10 @@ Rails.application.routes.draw do
 
   root "pages#index"
 
+  get "/login", to: "pages#login", as: "login"
+
+  get "/register", to: "pages#register", as: "register"
+
+  get "/generator", to: "pages#generator", as: "generator"
+
 end
