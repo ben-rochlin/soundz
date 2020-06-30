@@ -1,1 +1,26 @@
 <h1> Register Page </h1>
+
+
+<form action="<%=user_path%>" method="POST">
+<input type="hidden" value="<%=form_authenticity_token%>" name="authenticity_token">
+<li> </li>
+<label> First Name</label>
+<input type="text" placeholder="your name here" name="">
+<li>
+<label> Last Name</label>
+<input type="text" placeholder="your name here" name="">
+<li>
+<label> username</label>
+<input type="text" placeholder="your name here" name="">
+<li>
+<label> email</label>
+<input type="text" placeholder="your name here" name="">
+<li>
+<label> password </label>
+<input type="text" name="" >
+<li>
+<label> Repeat password </label>
+<input type="text" name="" >
+<li>
+<input type="submit" value="submit">
+</form>

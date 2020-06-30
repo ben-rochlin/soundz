@@ -9,5 +9,10 @@ Rails.application.routes.draw do
   get "/register", to: "pages#register", as: "register"
   #show generator page
   get "/generator", to: "pages#generator", as: "generator"
+  #show user page
+  get "/user", to: "pages#user", as: "user"
+  #registration form complete
+  post "/user", to: "pages#new_user" 
+
 
 end
