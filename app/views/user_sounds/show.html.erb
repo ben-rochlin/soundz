@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @user_sound.user_id %>
+</p>
+
+<p>
+  <strong>Sound:</strong>
+  <%= @user_sound.sound_id %>
+</p>
+
+<%= link_to 'Edit', edit_user_sound_path(@user_sound) %> |
+<%= link_to 'Back', user_sounds_path %>

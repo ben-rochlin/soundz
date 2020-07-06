@@ -1,0 +1,27 @@
+<%= form_with(model: sound, local: true) do |form| %>
+  <% if sound.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(sound.errors.count, "error") %> prohibited this sound from being saved:</h2>
+
+      <ul>
+        <% sound.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :url %>
+    <%= form.text_area :url %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
