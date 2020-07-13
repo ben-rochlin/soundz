@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :users
   resources :sounds
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
@@ -6,9 +7,9 @@ Rails.application.routes.draw do
 
 
 
+  root "pages#index"
 
   # #show home page 
-  # root "pages#index"
   # #show login page
   # get "/login", to: "pages#login", as: "login"
   # #show register page
